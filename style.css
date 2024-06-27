@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url("assets/images/bg.jpg");
+    height: 700px;
+    /* width: 100%; */
+    position: relative;
+    background-position: 50% 50%;
+    background-size: max(1200px, 100vw); 
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.main .box{
+    height: 700px;
+    width: 100%;
+    opacity: 0.69;
+    background-color: black;
+    position: absolute;
+    top: 0;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 77vw;
+    align-items: center;
+    margin:auto;
+    height: 90px;
+}
+
+nav img{
+    /* logo ko background se bahr lane ke liye increae its z-index */
+    position: relative;
+    z-index: 10;
+    height: 40px;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+}
+
+.hero{
+    display: flex;
+    color: white;
+    height: calc(100% - 90px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 80px; */
+    position: relative;
+    z-index: 10;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    gap: 20px;
+    padding:0 30px;
+    text-align: center;
+}
+
+.hero> :first-child{
+    font-size: 48px;
+    font-weight: 900;
+}
+.hero> :nth-child(2){
+    font-size: 24px;
+    font-weight: 400;
+}
+.hero> :nth-child(3){
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.separation{
+    height: 8px;
+    background-color: #242424;
+}
+button{
+    border: none;
+}
+.btn{
+    padding: 7px 20px;
+    font-weight: bold;
+    background-color: rgba(223, 223, 233, 0.081);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.283);
+    cursor: pointer;
+}
+.btn-red{
+    background-color: red;
+    color: white;
+    padding: 11px 20px;
+    font-size: 24px;
+}
+.btn-red-sm{
+    background-color: red;
+    color: white;
+}
+.main input{
+    font-size: 14px;
+    padding: 16px 143px 16px 10px;
+    background-color: rgba(23, 23, 23, 0.8);
+    border: 0.1px solid rgba(255, 255, 255, 0.377);
+    border-radius: 5px;
+    color: white;
+}
+.hero-buttons input::placeholder{
+    color: white;
+}
+.hero-buttons{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.first{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 72vw;
+    margin: 80px auto;
+    color: white;
+    align-items: center;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+@media (max-width:959px) {
+    .first{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+    }
+    .first div{
+        text-align: center;
+    }
+    .second{
+        flex-direction: column-reverse;
+    }
+    .fourth{
+        flex-direction: column-reverse;
+    }
+}
+.secimg{
+    position: relative;
+}
+.secimg > img{
+    width: 400px;
+    position: relative;
+    z-index: 1555;
+}
+.secimg video{
+    position: absolute;
+    top:60px;
+    left: 40px;
+    width: 350px;
+}
+
+.first > div :nth-child(1){
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+.first > div :nth-child(2){
+    font-size: 24px;
+    /* font-weight: 900; */
+}
+@media (max-width:959px) {
+    .first > div :nth-child(1){
+        font-size: 32px;
+        font-weight: 900;
+        margin-bottom: 15px;
+    }
+    .first > div :nth-child(2){
+        font-size: 16px;
+        /* font-weight: 900; */
+    }
+}
+.third video{
+    top: 45px;
+    left: 70px;
+    width: 250px;
+}
+
+.extra{
+    position: absolute;
+    color: white;
+    border: 2px solid rgba(128, 128, 128, 0.7);
+    border-radius: 12px;
+    height: 50px;
+    width: 200px;
+    top: 250px;
+    z-index: 10000;
+    display: flex;
+    justify-content: flex-start;
+    background-color: black;
+    padding: 10px;
+    gap: 10px;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+.extraflex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.extra :nth-child(2){
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.xyza{
+    width: 400px;
+    position: relative;
+    z-index: 1555;
+}
+.faq{
+    color: white;
+    max-width: 77vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+.faq h2{
+    text-align: center;
+    margin: 70px 0px 30px 0px;
+}
+.box_faq{
+    margin: 4px;
+    height: 2vw;
+    background-color: rgb(40, 40, 40);
+    font-size: 24px;
+    font-weight: 400;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq_heading{
+    font-size: 48px;
+    font-weight: 900;
+}
+.box_faq:hover{
+    background-color: rgb(70, 70, 70);
+}
+
+
+.extrasec{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    font-size: 20px;
+    font-weight: 400;
+    gap: 20px;
+
+}
+
+.extrasec input{
+    font-size: 14px;
+    padding: 16px 143px 16px 10px;
+    background-color: rgba(23,23,23,0);
+    border: 0.1px solid rgba(255, 255, 255, 0.377);
+    border-radius: 5px;
+    color: white;
+}
+
+footer{
+    color: rgba(255, 255, 255, 0.7)ite;
+    max-width: 80vw;
+    margin: 70px auto;
+}
+
+footer :nth-child(2){
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 12px;
+}
+
+a{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+}
+@media (max-width:1279px){
+    nav{
+        max-width: 95vw;
+    }
+}
+@media (max-width:599px){
+    .hero-buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+option{
+    background-color: red;
+}
+@media (max-width:959px){
+    .hero> :first-child{
+        font-size: 32px;
+    }
+    .hero> :nth-child(2){
+        font-size: 18px;
+    }
+    .hero> :nth-child(3){
+        font-size: 20px;
+    }
+    nav img{
+        height: 24px;
+    }
+    .main{
+        height: 500px;
+    }
+    .main .box{
+        height: 500px;
+    }
+    footer :nth-child(2){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+    
+}
+@media (max-width:959px) and (min-width:370px){
+    .main{
+        height: 500px;
+    }
+    .main .box{
+        height: 500px;
+    }
+}
+@media (max-width:369px){
+    .main{
+        height: 600px;
+    }
+    .main .box{
+        height: 600px;
+    }
+    .main input{
+        width: 80vw;
+    }
+}
